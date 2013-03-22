@@ -6,7 +6,7 @@
     try {
       socket.emit('error', a);
     } catch (e) {
-      socket.emit('error', [e.toString() + ' => ' + a.join(',')]); //, ' called from ' + arguments.callee
+      socket.emit('error', [e.toString() + ' => ' + a.join(',')]);
     }
   };
   myLog = function(){ 
@@ -14,14 +14,14 @@
     try {
       socket.emit('log', a);
     } catch (e) {
-      socket.emit('error', [e.toString() + ' => ' + a.join(',')]); // , ' called from ' + arguments.callee
+      socket.emit('error', [e.toString() + ' => ' + a.join(',')]);
     }
   };
   socket.on('eval', function(cmd) {
     try {
-      socket.emit('log', eval(cmd) );
+      socket.emit('log', [eval(cmd)] );
     } catch (e) {
-      socket.emit('error', [e.toString() + ' => ' + 'While evaling ' + cmd]);
+      socket.emit('error', [e.toString()]);
     }
   });
 </script>
