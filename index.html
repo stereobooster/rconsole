@@ -17,4 +17,11 @@
       socket.emit('error', [e.toString() + ' => ' + a.join(',')]); // , ' called from ' + arguments.callee
     }
   };
+  socket.on('eval', function(cmd) {
+    try {
+      socket.emit('log', eval(cmd) );
+    } catch (e) {
+      socket.emit('error', [e.toString() + ' => ' + 'While evaling ' + cmd]);
+    }
+  });
 </script>
