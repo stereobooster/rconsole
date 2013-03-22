@@ -27,4 +27,7 @@ see index.html
 
 ## Ideas
  - https://github.com/substack/dnode
- 
+ - http://stackoverflow.com/questions/14280536/how-to-connect-to-iphones-webkit-debugger
+   - https://github.com/andydavies/node-iosdriver
+   - http://www.libimobiledevice.org/
+ - https://developers.google.com/chrome-developer-tools/docs/protocol/tot/
