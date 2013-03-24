@@ -31,3 +31,4 @@ see index.html
    - https://github.com/andydavies/node-iosdriver
    - http://www.libimobiledevice.org/
  - https://developers.google.com/chrome-developer-tools/docs/protocol/tot/
+ - http://adamschwartz.co/chrome-inspector-detector/
